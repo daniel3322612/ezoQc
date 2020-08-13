@@ -1,10 +1,26 @@
 package ca.qc.ezo.enums;
 
+/**
+ * 
+ * @author Daniel O. TCHAPE
+ *
+ *         Permet de definir les operateurs mathematique gerer dans le programme
+ *         tout en specifiant leur signe, numero de priorite (decroissante) et
+ *         aussi leur nature (unaire ou binaire)
+ */
 public enum MathOperator {
 
-	PLUS("+", 5, false), MINUS("-", 5, false), DIVISION("/", 2, false), MULTIPLICATION("*", 2, false),
-	POWER("^", 2, false), MODULUS("%", 2, false), SQRT("sqrt", 1, true), UNARY_PLUS("+", 1, true),
-	UNARY_MINUS("-", 1, true), OPENED_PARANTHESE("(", 0, false), CLOSED_PARANTHESE(")", 0, false);
+	PLUS("+", 5, false),
+	MINUS("-", 5, false),
+	DIVISION("/", 2, false),
+	MULTIPLICATION("*", 2, false),
+	POWER("^", 2, false),
+	MODULUS("%", 2, false),
+	SQRT("sqrt", 1, true),
+	UNARY_PLUS("+", 1, true),
+	UNARY_MINUS("-", 1, true),
+	OPENED_PARANTHESE("(", 0, false),
+	CLOSED_PARANTHESE(")", 0, false);
 
 	private String symbol;
 	private int priorite;
